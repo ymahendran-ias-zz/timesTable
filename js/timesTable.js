@@ -1,5 +1,5 @@
 
-function drawTimesTable(minTimes, maxTimes, iterCount) {
+function drawTimesTable(minTimes, maxTimes, iterCount, headerId, contentId) {
 
     //initialize variables
     var timesTableHeader = "";
@@ -19,7 +19,7 @@ function drawTimesTable(minTimes, maxTimes, iterCount) {
     }
 
     //render the contents to the page
-    document.getElementById('timesTableHeader').innerHTML = timesTableHeader;
-    document.getElementById('timesTableContent').innerHTML = timesTable;
+    document.getElementById(headerId).innerHTML = timesTableHeader;
+    document.getElementById(contentId).innerHTML = timesTable;
 
 }
