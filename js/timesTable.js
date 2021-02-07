@@ -1,6 +1,11 @@
 
 function drawTimesTable(minTimes, maxTimes, iterCount, headerId, contentId) {
-
+    if(headerId == null) {
+        headerId ="timesTableHeader";
+    }
+    if(contentId == null) {
+        contentId ="timesTableContent";
+    }
     //initialize variables
     var timesTableHeader = "";
     var timesTable = "";
